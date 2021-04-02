@@ -1,0 +1,91 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100vw;
+  height: 100vw;
+  margin: 3rem auto;
+  border: 3px solid black;
+}
+
+body,
+html {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 0px;
+}
+
+.wrapper > div {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: none;
+}
+
+.prompt {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.border-tlb {
+  border-top: 3px solid black !important;
+  border-left: 3px solid black !important;
+  border-bottom: 3px solid black !important;
+}
+.border-all {
+  border-top: 3px solid black !important;
+  border-left: 3px solid black !important;
+  border-bottom: 3px solid black !important;
+  border-right: 3px solid black !important;
+}
+.border-trb {
+  border-top: 3px solid black !important;
+  border-right: 3px solid black !important;
+  border-bottom: 3px solid black !important;
+}
+.border-rbl {
+  border-left: 3px solid black !important;
+  border-right: 3px solid black !important;
+  border-bottom: 3px solid black !important;
+}
+.border-tr {
+  border-top: 3px solid black !important;
+  border-right: 3px solid black !important;
+}
+.border-trl {
+  border-top: 3px solid black !important;
+  border-left: 3px solid black !important;
+  border-right: 3px solid black !important;
+}
+.border-tl {
+  border-top: 3px solid black !important;
+  border-left: 3px solid black !important;
+}
+.border-lb {
+  border-left: 3px solid black !important;
+  border-bottom: 3px solid black !important;
+}
+.border-rb {
+  border-right: 3px solid black !important;
+  border-bottom: 3px solid black !important;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    width: 600px;
+    height: 600px;
+  }
+  .wrapper > div {
+    font-size: 3rem;
+  }
+}
